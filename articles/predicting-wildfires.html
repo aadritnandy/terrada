@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>predicting wildfires with computer vision - terrada</title>
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .article-container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 6rem 2rem 8rem 2rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-bottom: 3rem;
+            transition: var(--transition-smooth);
+        }
+        .back-link:hover {
+            color: var(--text-primary);
+            transform: translateX(-4px);
+        }
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        .article-header {
+            margin-bottom: 3rem;
+        }
+        .article-header h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.04em;
+            margin-bottom: 1.5rem;
+        }
+        .article-body {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            font-weight: 300;
+        }
+        .article-body p {
+            margin-bottom: 2rem;
+        }
+        .article-body h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--accent-green);
+            margin: 3rem 0 1.5rem 0;
+            letter-spacing: -0.03em;
+        }
+        .article-body blockquote {
+            border-left: 3px solid var(--accent-green);
+            padding-left: 1.5rem;
+            margin: 2.5rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        .article-footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .author-avatar {
+            width: 45px;
+            height: 45px;
+            background-color: var(--accent-light);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">terrada</a>
+            <nav class="nav-links">
+                <a href="../index.html#home" class="nav-link">home</a>
+                <a href="../index.html#research" class="nav-link">research</a>
+                <a href="../index.html#data" class="nav-link">find environmental data</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="../index.html#research" class="back-link">&larr; back to research</a>
+        
+        <article>
+            <header class="article-header">
+                <div class="article-meta">
+                    <span>august 24, 2026</span>
+                    <span>&bull;</span>
+                    <span>5 min read</span>
+                    <span>&bull;</span>
+                    <span>machine learning</span>
+                </div>
+                <h1>predicting wildfires using computer vision</h1>
+            </header>
+            
+            <section class="article-body">
+                <p>wildfires represent one of the most destructive natural forces of our era, exacerbated by rising global temperatures and unpredictable seasonal shifts. standard detection networks rely heavily on human reporting or physical watchtowers, which frequently spot blazes only after they have spread beyond control. by bridging satellite imaging with computer vision, we can intercept these disasters before they expand.</p>
+
+                <h2>the vision model approach</h2>
+                <p>convolutional neural networks (cnns) trained on vast libraries of multi-spectral satellite imagery can identify minute changes in surface reflectance and heat signatures. these vision systems scan high-altitude scans, looking for the earliest plumes of smoke and anomalous thermal points that escape the naked eye.</p>
+
+                <blockquote>
+                    "early detection is the single most critical factor in wildfire containment. predicting fires at the ignition stage transforms firefighting from reactive defense to proactive suppression."
+                </blockquote>
+
+                <h2>neural networks in flight</h2>
+                <p>deploying these neural networks onto edge devices—such as solar-powered observation drones and nanosatellites—allows for instant on-site processing. rather than waiting to beam raw telemetry back to centralized ground hubs, computer vision algorithms run evaluations in orbit, broadcasting geo-coordinates straight to emergency response squads within seconds.</p>
+
+                <h2>challenges and the path forward</h2>
+                <p>despite these breakthroughs, false positives (from morning ground mist, industrial emissions, or cloud cover shadows) continue to challenge developers. by training models on historical weather telemetry, humidity metrics, and wind vectors, hybrid architectures are refining accuracy, offering a path to reliable global surveillance.</p>
+            </section>
+
+            <footer class="article-footer">
+                <div class="author-info">
+                    <div class="author-avatar">t</div>
+                    <div>
+                        <p style="font-weight: 500; color: var(--text-primary);">terrada staff</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">research & climate tech</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 terrada. all rights reserved.</p>
+        </footer>
+</body>
+</html>

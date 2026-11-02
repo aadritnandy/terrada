@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terrada</title>
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hologram Canvas Background -->
+    <canvas id="hologram-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-btn">terrada</a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active" data-tab="home">home</a>
+                <a href="#research" class="nav-link" data-tab="research">research</a>
+                <a href="#data" class="nav-link" data-tab="data">find environmental data</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+        <!-- Home View -->
+        <section id="view-home" class="view active">
+            <!-- Decorative SVGs for environmental vibe -->
+            <div class="environmental-bg">
+                <!-- Flying Birds (Filled Silhouettes) -->
+                <svg class="env-svg bird bird-1" viewBox="0 0 40 20">
+                    <path d="M 0 10 C 5 0, 15 0, 20 8 C 25 0, 35 0, 40 10 C 30 7, 22 12, 20 18 C 18 12, 10 7, 0 10 Z" fill="var(--accent-green)"/>
+                </svg>
+                <svg class="env-svg bird bird-2" viewBox="0 0 40 20">
+                    <path d="M 0 10 C 5 0, 15 0, 20 8 C 25 0, 35 0, 40 10 C 30 7, 22 12, 20 18 C 18 12, 10 7, 0 10 Z" fill="var(--accent-green)"/>
+                </svg>
+                <svg class="env-svg bird bird-3" viewBox="0 0 40 20">
+                    <path d="M 0 10 C 5 0, 15 0, 20 8 C 25 0, 35 0, 40 10 C 30 7, 22 12, 20 18 C 18 12, 10 7, 0 10 Z" fill="var(--accent-green)"/>
+                </svg>
+
+                <!-- Minimalistic Geometric Pine Trees (Filled Silhouettes) -->
+                <svg class="env-svg tree tree-left" viewBox="0 0 100 150">
+                    <polygon points="50,10 20,60 80,60" fill="var(--accent-green)"/>
+                    <polygon points="50,40 15,95 85,95" fill="var(--accent-green)"/>
+                    <polygon points="50,70 10,130 90,130" fill="var(--accent-green)"/>
+                    <rect x="46" y="130" width="8" height="20" fill="var(--text-primary)"/>
+                </svg>
+
+                <svg class="env-svg tree tree-right" viewBox="0 0 100 150">
+                    <polygon points="50,15 25,60 75,60" fill="var(--accent-green)"/>
+                    <polygon points="50,45 18,95 82,95" fill="var(--accent-green)"/>
+                    <polygon points="50,75 12,130 88,130" fill="var(--accent-green)"/>
+                    <rect x="46" y="130" width="8" height="20" fill="var(--text-primary)"/>
+                </svg>
+
+                <!-- Deer Geometric Silhouette (Filled Silhouette) -->
+                <svg class="env-svg deer-silhouette" viewBox="0 0 80 100">
+                    <path d="M 20 80 L 24 80 L 27 55 L 47 55 L 50 80 L 54 80 L 56 50 C 56 44 51 39 43 39 L 34 39 L 22 23 L 25 20 L 31 31 L 35 31 L 35 45 L 20 45 Z" fill="var(--accent-green)"/>
+                </svg>
+            </div>
+
+            <div class="hero-container">
+                <!-- Large empty container to push scroll and activate leaf animation -->
+                <div class="scroll-trigger-space">
+                    <div class="hero-intro">
+                        <h1 class="hero-title">silicon & soil</h1>
+                        <p class="hero-subtitle">scroll to explore the connection</p>
+                        <div class="scroll-indicator">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-section">
+                    <div class="mission-card">
+                        <p class="mission-text">
+                            terrada is dedicated to creating articles about technology and machine learnings impact on the environment, and how it can help. we believe that code can restore what ecosystems have lost. our platform investigates the intersections of artificial intelligence, planetary observation, smart energy grids, and resource optimization. by bridging global data streams with human ingenuity, we strive to inspire open-source solutions to mitigate climate change and protect biodiversity.
+                        </p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSecdUSBJTGRcbxKyPVnbswVEMIQb9VBK6VLyihPqpPBwLMehg/viewform?usp=dialog" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-primary btn-submit">
+                            submit your article
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research View -->
+        <section id="view-research" class="view">
+            <div class="container">
+                <div class="view-header">
+                    <h2 class="view-title">research</h2>
+                </div>
+                <div class="research-container">
+                    <div class="research-card">
+                        <p class="research-message">
+                            work and publish public health and environmental tech research by emailing <a href="mailto:aadritnandy10@gmail.com" class="research-email-link">aadritnandy10@gmail.com</a>
+                        </p>
+                        <a href="mailto:aadritnandy10@gmail.com" class="btn btn-primary btn-email">
+                            email aadritnandy10@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find Environmental Data View -->
+        <section id="view-data" class="view">
+            <div class="container">
+                <div class="view-header">
+                    <h2 class="view-title">find environmental data</h2>
+                    <p class="view-desc">discover trusted open-source data repositories to fuel your own environmental research and algorithms.</p>
+                </div>
+                <div class="data-sources-list">
+                    <div class="source-card">
+                        <div class="source-info">
+                            <span class="source-tag">air quality</span>
+                            <h3 class="source-name">openaq</h3>
+                            <p class="source-description">the world's largest open-source air quality platform, aggregating real-time and historical air quality data from thousands of monitors globally.</p>
+                        </div>
+                        <a href="https://openaq.org/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">visit platform</a>
+                    </div>
+                    
+                    <div class="source-card">
+                        <div class="source-info">
+                            <span class="source-tag">forest & land</span>
+                            <h3 class="source-name">global forest watch</h3>
+                            <p class="source-description">an interactive online platform that provides data and tools for monitoring forests, tracking deforestation in near-real-time, and promoting forest preservation.</p>
+                        </div>
+                        <a href="https://www.globalforestwatch.org/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">visit platform</a>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-info">
+                            <span class="source-tag">satellite imagery</span>
+                            <h3 class="source-name">nasa earthdata</h3>
+                            <p class="source-description">direct access to NASA's massive repository of earth science satellite observations, covering climate indicators, ocean temperatures, and atmospheric composition.</p>
+                        </div>
+                        <a href="https://www.earthdata.nasa.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">visit platform</a>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-info">
+                            <span class="source-tag">climate monitoring</span>
+                            <h3 class="source-name">copernicus open access hub</h3>
+                            <p class="source-description">europe's earth observation programme providing free and open access to environmental, climate, marine, and land monitoring datasets via sentinel satellites.</p>
+                        </div>
+                        <a href="https://dataspace.copernicus.eu/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">visit platform</a>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-info">
+                            <span class="source-tag">biodiversity</span>
+                            <h3 class="source-name">gbif</h3>
+                            <p class="source-description">the global biodiversity information facility provides anyone, anywhere, open access to data about all types of life on earth, gathered from research and observations.</p>
+                        </div>
+                        <a href="https://www.gbif.org/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">visit platform</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 terrada. all rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
